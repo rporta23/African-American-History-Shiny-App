@@ -58,7 +58,7 @@ server <- function(input, output) {
 
     output$pop_plot <- renderPlot({
         census_tidy2 <- census_tidy %>%
-            filter(year %in% input$year, region == input$region)
+            filter(year == input$year, region == input$region)
 
         ggplot(census_tidy2, aes(x = race_status,
                                  y = number,
@@ -66,9 +66,9 @@ server <- function(input, output) {
             geom_col() +
             scale_y_continuous(labels = comma) +
             labs(title = "Composition of U.S. Population",
-                 x = "Race/Status",
+                 x = "Group",
                  y = "Number of People",
-                 fill = "Race/Status")
+                 fill = "Group")
     })
 }
 

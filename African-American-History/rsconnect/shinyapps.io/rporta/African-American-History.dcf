@@ -5,8 +5,8 @@ account: rporta
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2464112
-bundleId: 3279264
+bundleId: 3283582
 url: https://rporta.shinyapps.io/African-American-History/
-when: 1592340802.4288
+when: 1592417208.01034
 asMultiple: FALSE
 asStatic: FALSE
